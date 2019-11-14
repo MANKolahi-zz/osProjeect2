@@ -14,12 +14,10 @@ fun dfs(graph: Graph): Pair<String, HashMap<Vertex, Int>> {
     stringBuilder.append("dfs{\n")
 
     for (vertex in graph.verticesCollection)
-        when {
-            !visitedVertices.contains(vertex) -> {
-                stringBuilder.append("dfsUnit{\n")
-                stringBuilder.append(dfsUtil(graph, vertex, visitedVertices,repeatedVertex))
-                stringBuilder.append("}\n")
-            }
+        if (!visitedVertices.contains(vertex)) {
+            stringBuilder.append("dfsUnit{\n")
+            stringBuilder.append(dfsUtil(graph, vertex, visitedVertices,repeatedVertex))
+            stringBuilder.append("}\n")
         }
 
     stringBuilder.append("}")
@@ -27,7 +25,7 @@ fun dfs(graph: Graph): Pair<String, HashMap<Vertex, Int>> {
 }
 
 
-private fun dfsUtil(graph: Graph, processingVertex: Vertex, visitedVertices: HashSet<Vertex>,repeatedVertex : HashMap<Vertex, Int>): String {
+fun dfsUtil(graph: Graph, processingVertex: Vertex, visitedVertices: HashSet<Vertex>,repeatedVertex : HashMap<Vertex, Int>): String {
     val stringBuilder = StringBuilder()
 
     visitedVertices.add(processingVertex)

@@ -3,37 +3,37 @@ Graph[
      node[
     	    id  0
     	LabelGraphics[ text  "R1" ]
-    	values[[type:resource] [instanceNumber:1] [usedInstance:1] [fgf:gfsg]]
+    	values[[type:resource] [instanceNumber:1] [usedInstance:1]]
     ]
     node[
     	    id   1
     	LabelGraphics[ text  "R2" ]
-    	values[[type:resource] [instanceNumber:1] [usedInstance:1] [fgf:gfsg]]
+    	values[[type:resource] [instanceNumber:1] [usedInstance:1]]
     ]
     node[
     	    id   3
     	LabelGraphics[ text  "R3" ]
-    	values[[type:resource] [instanceNumber:2] [usedInstance:2] [fgf:gfsg]]
+    	values[[type:resource] [instanceNumber:2] [usedInstance:2]]
     ]
     node[
     	    id	 4
     	LabelGraphics[ text  "R4" ]
-    	values[[type:resource] [instanceNumber:3] [usedInstance:0] [fgf:gfsg]]
+    	values[[type:resource] [instanceNumber:3] [usedInstance:0]]
     ]
     node[
     	    id	5
     	LabelGraphics[ text  "P1" ]
-    	values[[type:process] [fgf:gfsg]]
+    	values[[type:process]]
     ]
     node[
     	    id	6
     	LabelGraphics[ text  "P2" ]
-    	values[[type:process] [fgf:gfsg]]
+    	values[[type:process]]
     ]
     node[
         id	7
     	LabelGraphics[ text  "P3" ]
-    	values[[type:process] [fgf:gfsg]]
+    	values[[type:process]]
     ]
 
     edge[
